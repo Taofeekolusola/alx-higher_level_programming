@@ -6,4 +6,3 @@ if __name__ == "__main__":
         # print only names that do not start with __
         if a[:2] != '__':
             print("{}".format(a))
-
