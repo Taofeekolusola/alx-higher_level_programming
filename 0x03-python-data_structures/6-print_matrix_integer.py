@@ -3,8 +3,8 @@ def print_matrix_integer(matrix=[[]]):
     if not matrix:
         print()
     for i in range(len(matrix)):
-        for nums in range(len(matrix(i))):
-            if nums != len(matrix(i))-1:
+        for nums in range(len(matrix[i])):
+            if nums != len(matrix[i])-1:
                 last_space = ''
             else:
                 last_space = ""
