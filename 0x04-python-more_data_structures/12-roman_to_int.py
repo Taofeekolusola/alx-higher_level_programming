@@ -2,14 +2,14 @@
 def roman_to_int(roman_string: str):
     if roman_string is None or type(roman_string) != str:
         return 0
-    data = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-    numbers = [data[x] for x in roman_string] + [0]
-    rep = 0
+    items = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    num = [items[x] for x in roman_string] + [0]
+    cou = 0
 
-    for i in range(len(numbers) - 1):
-        if numbers[i] >= numbers[i+1]:
-            rep += numbers[i]
+    for a in range(len(num) - 1):
+        if num[a] >= num[a+1]:
+            cou += num[a]
         else:
-            rep -= numbers[i]
+            cou -= num[a]
 
-    return rep
+    return cou
