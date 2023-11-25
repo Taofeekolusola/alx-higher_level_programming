@@ -19,7 +19,7 @@ def add_integer(a, b=98):
         raise TypeError('a must be an integer')
     if type(b) not in (float, int):
         raise TypeError('b must be an integer')
-    return int(a) + int(b) or float(a) + float(b)
+    return int(a) + int(b)
 
 if __name__ == "__main__":
     import doctest
