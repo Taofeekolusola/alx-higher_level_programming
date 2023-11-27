@@ -72,7 +72,7 @@ class Rectangle:
         for a in range(self.__height):
             [rectang.append(str(self.print_symbol)) for b in range(self.__width)]
             if a != self.__height - 1:
-                rect.append("\n")
+                rectang.append("\n")
         return ("".join(rectang))
 
     def __repr__(self):
