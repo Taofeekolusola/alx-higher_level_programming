@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class.
+"""Defines a Rectangle class."""
 
-     Attribute:
-        instance_num (int): The number of Rectangle instances.
-"""
-    instance_num = 0
 
 class Rectangle:
-    """Represents a rectangle."""
+    """Represents a rectangle.
+
+    Attribute:
+        instance_num (int): The number of Rectangle instances."""
+
+    instance_num = 0
 
     def __init__(self, width=0, height=0):
         """Begins a new Rectangle.
