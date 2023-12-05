@@ -2,14 +2,14 @@
 """Defines a file that appends function."""
 
 
-def write_file(filename="", text=""):
-    """Appends a string to a UTF8 text file.
+def append_write(filename="", text=""):
+    """Appends a string to the end of a UTF8 text file.
 
     Args:
-        filename (str): The name of the file to be appended.
-        text (str): The text to be appended to the file.
+        filename (str): The name of the file to be appended to.
+        text (str): The string to be appended to the file.
     Returns:
-        The number of characters added.
+        The number of characters appended.
     """
     with open(filename, "a", encoding="utf-8") as fn:
         return fn.write(text)
