@@ -9,7 +9,7 @@ prints the following statistics:
 
 
 def print_stats(size, status_codes):
-    """Print accumulated metrics.
+    """Prints accumulated metrics.
 
     Args:
         size (int): The accumulated read file size.
@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     size = 0
     status_codes = {}
-    val_codes = ['200', '301', '400', '401', '403', '404', '405', '500']
+    valid_codes = ['200', '301', '400', '401', '403', '404', '405', '500']
     count = 0
 
     try:
@@ -44,7 +44,7 @@ if __name__ == "__main__":
                 pass
 
             try:
-                if l[-2] in val_codes:
+                if l[-2] in valid_codes:
                     if status_codes.get(l[-2], -1) == -1:
                         status_codes[l[-2]] = 1
                     else:
