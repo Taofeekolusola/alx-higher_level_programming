@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const a = process.argv[2];
+const a = parseInt(process.argv[2]);
 const squareLen = a;
 let i;
 let j;
