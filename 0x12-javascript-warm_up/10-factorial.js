@@ -11,4 +11,6 @@ function fact (a) {
 if (process.argv.length === 3) {
   const inputNumber = parseInt(process.argv[2]);
   console.log(fact(inputNumber));
+} else if (process.argv.length === 2) {
+  console.log(1);
 }
