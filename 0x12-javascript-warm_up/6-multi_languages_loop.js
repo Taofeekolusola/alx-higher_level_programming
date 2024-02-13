@@ -1,10 +1,9 @@
 #!/usr/bin/node
 
+const statements = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 let i = 0;
 
-while (i < 1) {
-  console.log('C is fun');
-  console.log('Python is cool');
-  console.log('JavaScript is amazing');
+while (i < statements.length) {
+  console.log(statements[i]);
   i++;
 }
