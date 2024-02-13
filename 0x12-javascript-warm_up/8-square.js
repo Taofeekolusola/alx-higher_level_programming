@@ -1,6 +1,7 @@
 #!/usr/bin/node
-const x = process.argv[2];
-const squareLen = x;
+
+const a = process.argv[2];
+const squareLen = a;
 let i;
 let j;
 for (i = 0; i < squareLen; i++) {
@@ -10,6 +11,6 @@ for (i = 0; i < squareLen; i++) {
   }
   console.log(row);
 }
-if (!parseInt(x)) {
+if (isNaN(a)) {
   console.log('Missing size');
 }
