@@ -1,8 +1,13 @@
 #!/usr/bin/node
+function isAlphabetic(value) {
+  return isNaN(value) && /^[a-zA-Z]+$/.test(value);
+}
+
 let a = process.argv[2];
-let b = parseInt(a);
-if (process.argv === 2 && Number.isInteger(b)) {
-  console.log('My number:', b);
-} else {
+if (process.argv.length < 2) {
   console.log('Not a number');
+} else if (isAlphabetic(a)) {
+  console.log('Not a number');
+} else {
+  console.log('My number:', parseInt(a));
 }
