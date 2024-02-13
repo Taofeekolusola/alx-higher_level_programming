@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-function fact(a) {
+function fact (a) {
   if (isNaN(a) || a === 0) {
     return 1;
   } else {
